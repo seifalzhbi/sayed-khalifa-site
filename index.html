@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سيد خليفة - الموقع الشخصي</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      background-color: #444;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>سيد خليفة</h1>
+    <p>الموقع الشخصي</p>
+  </header>
+
+  <nav>
+    <a href="#about">من أنا</a>
+    <a href="#gallery">الصور</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>من هو سيد خليفة؟</h2>
+    <p>
+      سيد خليفة — شخص عاشق للفن البصري والمشاريع الرمزية، يجمع بين الخيال والواقع في صوره. يرى في كل صورة قصة تستحق أن تُروى، وفي كل مشروع رسالة تلمس القلب.
+    </p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>لقطات من مشروع أمي</h2>
+    <div class="gallery">
+      <img src="images/mother_final.jpg" alt="السيدة الكبيرة">
+      <img src="images/road_inside_head.jpg" alt="الرجل والمرأة في الضباب">
+      <img src="images/two_faces_tree.jpg" alt="وجهان وشجرة">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 سيد خليفة. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
