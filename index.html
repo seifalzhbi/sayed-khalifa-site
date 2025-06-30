@@ -4,51 +4,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سيد خليفة</title>
+  <title>سيد خليفة - الموقع الشخصي</title>
   <style>
     body {
       font-family: 'Tahoma', sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f5f5f5;
       margin: 0;
       padding: 0;
-      text-align: center;
+      direction: rtl;
     }
     header {
-      background-color: #333;
+      background-color: #222;
       color: white;
       padding: 20px;
-      font-size: 24px;
+      text-align: center;
     }
-    section {
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      background-color: #444;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section {
       padding: 30px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .image-gallery img {
-      max-width: 250px;
-      margin: 10px;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    الموقع الرسمي لـ سيد خليفة
+    <h1>سيد خليفة</h1>
+    <p>الموقع الشخصي</p>
   </header>
 
-  <section>
-    <h2>صور ومقتطفات</h2>
-    <div class="image-gallery">
-      <img src="images/img1.jpg" alt="صورة 1">
-      <img src="images/img2.jpg" alt="صورة 2">
-      <img src="images/img3.jpg" alt="صورة 3">
+  <nav>
+    <a href="#about">من أنا</a>
+    <a href="#gallery">الصور</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>من هو سيد خليفة؟</h2>
+    <p>
+      سيد خليفة — شخص عاشق للفن البصري والمشاريع الرمزية، يجمع بين الخيال والواقع في صوره. يرى في كل صورة قصة تستحق أن تُروى، وفي كل مشروع رسالة تلمس القلب.
+    </p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>لقطات من مشروع أمي</h2>
+    <div class="gallery">
+      <img src="images/mother_final.jpg" alt="السيدة الكبيرة">
+      <img src="images/road_inside_head.jpg" alt="الرجل والمرأة في الضباب">
+      <img src="images/two_faces_tree.jpg" alt="وجهان وشجرة">
     </div>
   </section>
 
-  <!-- زر واتساب ثابت -->
-  <a href="https://wa.me/201224722049" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 12px 20px; border-radius: 30px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 999;">
-    💬 راسلني على واتساب
-  </a>
-
+  <footer>
+    <p>&copy; 2025 سيد خليفة. جميع الحقوق محفوظة.</p>
+  </footer>
 </body>
 </html>
